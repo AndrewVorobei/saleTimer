@@ -1,0 +1,216 @@
+.mobile_header {
+  display: flex;
+  background: $purple;
+  .mobile_header_section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 17px 26px 18px 27px;
+
+    .burger_btn {
+      background: none;
+      border: none;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+
+      .burger_menu_line {
+        width: 23px;
+        height: 2px;
+        background: $white;
+      }
+    }
+  }
+}
+
+.mobile_main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .main_header {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 15px;
+  }
+
+  .mobile_hr {
+    width: 280px;
+    height: 2px;
+    margin-top: 10px;
+    background: rgba($purple, $alpha: 0.2);
+  }
+
+  .mobile_slider {
+    display: inline-flex;
+    margin-top: 23px;
+
+    .mobile_slider_item {
+      display: none;
+    }
+
+    .mobile_slider_item.active {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 260px;
+      height: 59px;
+      background: rgba($purple, $alpha: 0.2);
+      border-radius: 10px;
+
+      .cost_block {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+        .price,
+        .cost {
+          font-size: 24px;
+          color: $black;
+          font-weight: 700;
+        }
+        .cost_ellipse {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 17px;
+          height: 17px;
+          font-size: 8px;
+          font-weight: 700;
+          background: url("/src/assets/images/gold-ellipse.svg") center
+            no-repeat;
+        }
+      }
+
+      &:first-child {
+        background: $purple;
+
+        .cost_block {
+          margin-left: 32px;
+          .price,
+          .cost {
+            color: $white;
+          }
+        }
+
+        .special_offer {
+          position: absolute;
+          left: 20px;
+          display: inline-flex;
+          padding: 3px 10px 4px 10px;
+          font-size: 14px;
+          font-weight: 700;
+          border-radius: 5px;
+          background: $gold;
+        }
+      }
+    }
+  }
+
+  .slider_controls {
+    display: flex;
+    gap: 8px;
+    margin-top: 8px;
+  }
+
+  .try_btn {
+    margin-top: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $gold;
+    width: 280px;
+    height: 55px;
+    border: none;
+    border-radius: 10px;
+    color: $black;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .privacy_policy_block {
+    display: flex;
+    max-width: 280px;
+    margin-top: 15px;
+    gap: 10px;
+
+    .privacy_policy_checkbox {
+      display: none;
+      &:checked + label::before {
+        background: $purple;
+        border-radius: 5px;
+        background-image: url("/src/assets/images/checked.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+    .privacy_policy_checkbox + label::before {
+      content: "";
+      display: inline-flex;
+      width: 20px;
+      height: 20px;
+      flex-shrink: 0;
+      flex-grow: 0;
+      border-radius: 5px;
+      border: 1px solid #adb5bd;
+      margin-right: 10px;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+
+    .input_text {
+      display: flex;
+      align-items: center;
+      font-size: 10px;
+      font-weight: 400;
+      line-height: 16px;
+
+      .input_text_block {
+        max-width: 250px;
+        .input_text_href {
+          color: $purple;
+        }
+      }
+    }
+  }
+
+  .img_after_input {
+    margin-top: 32px;
+    width: 81px;
+    height: 67px;
+  }
+
+  .mobile_functionality_block {
+    margin-top: 13px;
+    display: flex;
+    max-width: 280px;
+    flex-direction: column;
+    gap: 10px;
+
+    .mobile_function_item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      .ellipse_block {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        background-image: url("/src/assets/images/mobile-transparent.svg");
+
+        img {
+          width: 16px;
+          height: 16px;
+        }
+      }
+
+      .mobile_function_text {
+        font-size: 12px;
+        font-weight: 700;
+        color: $purple;
+      }
+    }
+  }
+}

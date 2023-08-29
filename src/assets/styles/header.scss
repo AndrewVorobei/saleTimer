@@ -1,0 +1,47 @@
+.app_header {
+  display: flex;
+  width: 100%;
+  background: $purple;
+  .header_section {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 376px 0 378px;
+
+    @media (max-width: 1300px) {
+      margin: 0;
+    }
+    h1 {
+      color: $white;
+      font-size: 48px;
+      font-weight: 700;
+      margin: 17px 0 28px;
+    }
+
+    .navigation {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+
+      a {
+        display: flex;
+        font-size: 16px;
+        font-weight: 700;
+        color: $white;
+
+        &:last-child {
+          padding: 6px 13px;
+          border-radius: 10px;
+          gap: 10px;
+          background: $premium-bg;
+          color: $gold;
+        }
+
+        &:hover {
+          color: rgba($white, $alpha: 0.7);
+        }
+      }
+    }
+  }
+}

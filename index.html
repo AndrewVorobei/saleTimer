@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.scss" />
+
+    <title>adCombo</title>
+  </head>
+  <body>
+    <div id="app-desktop">
+      <header class="app_header">
+        <div class="header_section">
+          <h1>Logo</h1>
+          <section class="navigation">
+            <a class="nav_nearbu">People nearbu</a>
+            <a class="nav_search">Search</a>
+            <a class="nav_premuium">
+              Premium
+              <img src="src/assets/images/diamond.svg" alt="Diamond" />
+            </a>
+          </section>
+        </div>
+      </header>
+      <main class="app_main">
+        <div class="sidebar">
+          <div class="sidebar_profile">
+            <img src="/src/assets/images/avatar_img.svg" alt="profile_img" />
+            <section class="profile_text">
+              <h1 class="profile_name">Test2412</h1>
+              <a class="profile_premium"> GET PREMIUM </a>
+            </section>
+          </div>
+          <hr class="profile_hr" />
+          <div class="sidebar_main">
+            <div class="sidebar_icons">
+              <img src="/src/assets/images/profile.svg" alt="profile-icon" />
+              <img src="/src/assets/images/photo.svg" alt="photo-icon" />
+              <img src="/src/assets/images/comment-text.svg" alt="message" />
+              <img src="/src/assets/images/heart.svg" alt="heart-icon" />
+              <img src="/src/assets/images/eye.svg" alt="eye-icon" />
+              <img src="/src/assets/images/setting.svg" alt="settings-icon" />
+              <img src="/src/assets/images/log-out.svg" alt="log-out-svg" />
+            </div>
+            <div class="sidebar_menu">
+              <a class="sidebar_item">Profile</a>
+              <a class="sidebar_item">My photos</a>
+              <a class="sidebar_item">Messages</a>
+              <a class="sidebar_item">Favorites</a>
+              <a class="sidebar_item">Guests</a>
+              <a class="sidebar_item">Settings</a>
+              <a class="sidebar_item">Log out</a>
+            </div>
+          </div>
+        </div>
+        <div class="main_content">
+          <h1 class="main_content_header">Закончились кредиты?</h1>
+          <hr class="main_content_hr" />
+          <div class="sale_block">
+            <h1 class="sale_value">Скидка 40%</h1>
+            <p class="sale_block_text">Предложение действует в течении:</p>
+            <div class="sale_block_timer">
+              <span class="timer_element hours">00</span> :
+              <span class="timer_element minutes">00</span> :
+              <span class="timer_element seconds">00</span>
+            </div>
+          </div>
+          <div class="card_block"></div>
+          <div class="privacy_policy_block">
+            <input
+              type="checkbox"
+              class="privacy_policy_checkbox"
+              id="checkbox_1"
+              checked
+            />
+            <label for="checkbox_1" class="input_text">
+              By clicking Checkbox you agree and accept our
+              <a class="input_text_href"> Privacy Policy </a>, and
+              <a class="input_text_href"> Terms of use </a>
+            </label>
+          </div>
+          <div class="functionality_block">
+            <div class="functionality_block_top">
+              <div class="function_item">
+                <div class="function_item_ellipse">
+                  <img
+                    src="/src/assets/images/comment-text.svg"
+                    alt="message"
+                  />
+                </div>
+                <p class="function_item_text">Отправлять сообщения</p>
+              </div>
+              <div class="function_item">
+                <div class="function_item_ellipse">
+                  <img src="/src/assets/images/heart.svg" alt="heart" />
+                </div>
+                <p class="function_item_text">
+                  Пользоваться другими премиум функциями
+                </p>
+              </div>
+            </div>
+
+            <div class="functionality_block_middle">
+              <div class="function_item">
+                <div class="function_item_ellipse">
+                  <img src="/src/assets/images/gift.svg" alt="message" />
+                </div>
+                <p class="function_item_text">Оплачивать подарки</p>
+              </div>
+
+              <div class="function_item_ellipse">
+                <img
+                  src="/src/assets/images/big-diamond.svg"
+                  alt="big_diamond"
+                  class="big-diamond"
+                />
+              </div>
+
+              <div class="function_item">
+                <div class="function_item_ellipse">
+                  <img src="/src/assets/images/eye.svg" alt="eye" />
+                </div>
+                <p class="function_item_text">Просматривать скрытые фото</p>
+              </div>
+            </div>
+
+            <div class="functionality_block_bottom">
+              <div class="function_item">
+                <div class="function_item_ellipse">
+                  <img
+                    src="/src/assets/images/comment-text.svg"
+                    alt="message"
+                  />
+                </div>
+                <p class="function_item_text">Просматривать скрытые фото</p>
+              </div>
+
+              <div class="function_item">
+                <div class="function_item_ellipse">
+                  <img src="/src/assets/images/setting.svg" alt="setting" />
+                </div>
+                <p class="function_item_text">Просматривать скрытые фото</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bubbles_left">
+          <img
+            class="bubbles_img"
+            src="/src/assets/images/bubbles-left.svg"
+            alt="bubbles-left"
+          />
+        </div>
+        <div class="bubbles_right">
+          <img src="/src/assets/images/bubbles-right.svg" alt="bubbles-right" />
+        </div>
+      </main>
+    </div>
+    <div id="app-mobile">
+      <header class="mobile_header">
+        <div class="mobile_header_section">
+          <button class="burger_btn">
+            <div class="burger_menu_line"></div>
+            <div class="burger_menu_line"></div>
+            <div class="burger_menu_line"></div>
+          </button>
+          <img src="/src/assets/images/diamond.svg" alt="diamond" />
+        </div>
+      </header>
+      <main class="mobile_main">
+        <h1 class="main_header">Закончились кредиты?</h1>
+        <hr class="mobile_hr" />
+        <div class="mobile_slider"></div>
+        <div class="slider_controls">
+          <img
+            src="/src/assets/images/slider_control.svg"
+            alt="slider-control"
+          />
+          <img
+            src="/src/assets/images/slider_control.svg"
+            alt="slider-control"
+          />
+        </div>
+        <button class="try_btn">Try now</button>
+        <div class="privacy_policy_block">
+          <input
+            type="checkbox"
+            class="privacy_policy_checkbox"
+            id="checkbox_mobile"
+            checked
+          />
+          <label for="checkbox_mobile" class="input_text">
+            <div class="input_text_block">
+              By clicking Checkbox you agree and accept our
+              <a class="input_text_href"> Privacy Policy </a>, and
+              <a class="input_text_href"> Terms of use </a>
+            </div>
+          </label>
+        </div>
+        <img
+          src="/src/assets/images/big-diamond.svg"
+          alt="big-diamond"
+          class="img_after_input"
+        />
+        <div class="mobile_functionality_block">
+          <div class="mobile_function_item">
+            <div class="ellipse_block">
+              <img
+                src="/src/assets/images/comment-text.svg"
+                alt="comment-text"
+              />
+            </div>
+            <span class="mobile_function_text"> Отправлять сообщения </span>
+          </div>
+          <div class="mobile_function_item">
+            <div class="ellipse_block">
+              <img src="/src/assets/images/eye.svg" alt="eye" />
+            </div>
+            <span class="mobile_function_text">
+              Просматривать скрытые фото
+            </span>
+          </div>
+          <div class="mobile_function_item">
+            <div class="ellipse_block">
+              <img src="/src/assets/images/gift.svg" alt="gift" />
+            </div>
+            <span class="mobile_function_text"> Оплачивать подарки </span>
+          </div>
+          <div class="mobile_function_item">
+            <div class="ellipse_block">
+              <img src="/src/assets/images/heart.svg" alt="heart" />
+            </div>
+            <span class="mobile_function_text">
+              Пользоваться другими премиум функциями
+            </span>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

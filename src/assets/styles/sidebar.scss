@@ -1,0 +1,80 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  max-width: 270px;
+  height: 810px;
+  max-height: 100vh;
+  margin: 30px 0 28px 0;
+  border-radius: 10px;
+  border: 2px solid rgba($card-border, $alpha: 0.2);
+  background: rgba($purple, $alpha: 0.1);
+
+  @media (max-height: 1200px) {
+    height: 85vh;
+  }
+
+  .sidebar_profile {
+    display: flex;
+    margin: 18px 0 20px 18px;
+    gap: 15px;
+
+    .profile_text {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+
+      .profile_name {
+        font-size: 16px;
+        font-weight: 700;
+        color: $black;
+      }
+
+      .profile_premium {
+        display: inline-flex;
+        padding: 5px 10px;
+        border-radius: 5px;
+        background: $premium-bg;
+        color: $white;
+        font-size: 10px;
+        font-weight: 400px;
+      }
+    }
+  }
+  .profile_hr {
+    margin-left: 18px;
+    width: 232px;
+    height: 2px;
+    background: $card-border;
+    opacity: 0.2;
+  }
+
+  .sidebar_main {
+    display: flex;
+    height: 282px;
+    max-height: 282px;
+    gap: 29.81px;
+    margin: 21px 111px 0 30px;
+    .sidebar_icons {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .sidebar_menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding-top: 1px;
+      a {
+        display: inline-flex;
+        white-space: nowrap;
+        font-size: 16px;
+        font-weight: 400;
+
+        &:hover {
+          color: rgba($black, $alpha: 0.5);
+        }
+      }
+    }
+  }
+}
