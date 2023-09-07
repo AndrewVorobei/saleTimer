@@ -1,4 +1,4 @@
-# AdCombo_Test_Task
+# saleTimer
 Layout with parallax, timer and slider(on mobile version) 
 
 ## Recommended IDE Setup 
